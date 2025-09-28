@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PlatformerSpawned1.mp3-318901023d6bc4d9db91139f6396415e.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/PlatformerSpawned1.mp3"
+dest_files=[ "res://.import/PlatformerSpawned1.mp3-318901023d6bc4d9db91139f6396415e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

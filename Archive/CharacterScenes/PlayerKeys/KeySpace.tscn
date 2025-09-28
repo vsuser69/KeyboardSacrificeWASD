@@ -1,0 +1,147 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Themes/DefaultKeyTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Inkscape/Sprites/KeySpace.png" type="Texture" id=2]
+[ext_resource path="res://CharacterScenes/PlayerKeys/KeySpace.gd" type="Script" id=3]
+[ext_resource path="res://Inkscape/Particles/WhiteBoxParticle.png" type="Texture" id=4]
+[ext_resource path="res://Inkscape/Sprites/KeySpaceSmall.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 72, 12 )
+
+[node name="KeySpace" type="Area2D"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+key_string = "Space"
+
+[node name="KeyCollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 64, 0 )
+shape = SubResource( 1 )
+
+[node name="KeyTextureProgress" type="TextureProgress" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+max_value = 360.0
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 5 )
+texture_progress = ExtResource( 2 )
+fill_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeyLabel" type="Label" parent="."]
+use_parent_material = true
+margin_left = -19.0
+margin_top = -20.0
+margin_right = 153.0
+margin_bottom = 28.0
+theme = ExtResource( 1 )
+text = "SPACE"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="KeyTween" type="Tween" parent="."]
+
+[node name="KeyUpRayCast2D1" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyUpRayCast2D2" type="RayCast2D" parent="."]
+position = Vector2( 32, 0 )
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyUpRayCast2D3" type="RayCast2D" parent="."]
+position = Vector2( 64, 0 )
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyUpRayCast2D4" type="RayCast2D" parent="."]
+position = Vector2( 96, 0 )
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyUpRayCast2D5" type="RayCast2D" parent="."]
+position = Vector2( 128, 0 )
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyLeftRayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 64, 0 )
+enabled = true
+cast_to = Vector2( -96, 0 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D1" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D2" type="RayCast2D" parent="."]
+position = Vector2( 32, 0 )
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D3" type="RayCast2D" parent="."]
+position = Vector2( 64, 0 )
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D4" type="RayCast2D" parent="."]
+position = Vector2( 96, 0 )
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D5" type="RayCast2D" parent="."]
+position = Vector2( 128, 0 )
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyRightUpRayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 64, 0 )
+enabled = true
+cast_to = Vector2( 96, 0 )
+collide_with_areas = true
+
+[node name="KeyCPUParticles2D" type="CPUParticles2D" parent="."]
+z_index = -1
+emitting = false
+amount = 35
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+lifetime_randomness = 1.0
+texture = ExtResource( 4 )
+direction = Vector2( 0, -1 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 100.0
+initial_velocity_random = 1.0
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+scale_amount_random = 1.0
+[connection signal="body_entered" from="." to="." method="_on_KeySpace_body_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_Key_mouse_entered"]
+[connection signal="tween_completed" from="KeyTween" to="." method="_on_KeyTween_tween_completed"]

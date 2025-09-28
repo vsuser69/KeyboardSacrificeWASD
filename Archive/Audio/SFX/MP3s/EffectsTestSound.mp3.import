@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/EffectsTestSound.mp3-bddef2004fb327a798d526f0dedbc671.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/EffectsTestSound.mp3"
+dest_files=[ "res://.import/EffectsTestSound.mp3-bddef2004fb327a798d526f0dedbc671.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

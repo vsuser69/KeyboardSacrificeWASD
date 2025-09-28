@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TouchGreen.ogg-46648fd470db6c9875feae58bd38a3c8.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/TouchGreen.ogg"
+dest_files=[ "res://.import/TouchGreen.ogg-46648fd470db6c9875feae58bd38a3c8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

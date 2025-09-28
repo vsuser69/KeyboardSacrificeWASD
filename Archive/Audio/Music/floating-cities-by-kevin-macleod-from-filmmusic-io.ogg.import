@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/floating-cities-by-kevin-macleod-from-filmmusic-io.ogg-36a3676e803b584fe076ae80de775357.oggstr"
+
+[deps]
+
+source_file="res://Audio/Music/floating-cities-by-kevin-macleod-from-filmmusic-io.ogg"
+dest_files=[ "res://.import/floating-cities-by-kevin-macleod-from-filmmusic-io.ogg-36a3676e803b584fe076ae80de775357.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

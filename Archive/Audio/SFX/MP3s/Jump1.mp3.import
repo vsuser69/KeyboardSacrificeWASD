@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jump1.mp3-6b7c6b33f9ab4bb4b6407d2f2744837a.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/Jump1.mp3"
+dest_files=[ "res://.import/Jump1.mp3-6b7c6b33f9ab4bb4b6407d2f2744837a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

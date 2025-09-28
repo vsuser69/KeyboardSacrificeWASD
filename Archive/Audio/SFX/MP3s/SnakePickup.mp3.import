@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakePickup.mp3-ccf76469765441163a78033f3d1ec905.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakePickup.mp3"
+dest_files=[ "res://.import/SnakePickup.mp3-ccf76469765441163a78033f3d1ec905.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

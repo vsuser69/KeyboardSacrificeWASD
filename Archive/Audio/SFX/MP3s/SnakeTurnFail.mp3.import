@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakeTurnFail.mp3-05f93e1fefd317c4c6b9d17e860abdec.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakeTurnFail.mp3"
+dest_files=[ "res://.import/SnakeTurnFail.mp3-05f93e1fefd317c4c6b9d17e860abdec.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakeMove.mp3-c553630e2a69ab764f0cccac957194fc.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakeMove.mp3"
+dest_files=[ "res://.import/SnakeMove.mp3-c553630e2a69ab764f0cccac957194fc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakeEnd.mp3-e6271bf3ff1ea054ae2d232b9a45d0b3.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakeEnd.mp3"
+dest_files=[ "res://.import/SnakeEnd.mp3-e6271bf3ff1ea054ae2d232b9a45d0b3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

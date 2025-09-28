@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKey.tscn" type="PackedScene" id=1]
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKeys.gd" type="Script" id=2]
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKey.gd" type="Script" id=3]
+
+[node name="GoalKeys" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="GoalKeyW" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 720, 272 )
+z_index = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+key_string = "W"
+
+[node name="GoalKeyA" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 688, 304 )
+z_index = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+key_string = "A"
+
+[node name="GoalKeyS" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 720, 304 )
+z_index = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+key_string = "S"
+
+[node name="GoalKeyD" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 752, 304 )
+z_index = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+key_string = "D"
+[connection signal="area_entered" from="GoalKeyW" to="GoalKeyW" method="_on_GoalKey_area_entered"]
+[connection signal="area_exited" from="GoalKeyW" to="GoalKeyW" method="_on_GoalKey_area_exited"]
+[connection signal="area_entered" from="GoalKeyA" to="GoalKeyA" method="_on_GoalKey_area_entered"]
+[connection signal="area_exited" from="GoalKeyA" to="GoalKeyA" method="_on_GoalKey_area_exited"]
+[connection signal="area_entered" from="GoalKeyS" to="GoalKeyS" method="_on_GoalKey_area_entered"]
+[connection signal="area_exited" from="GoalKeyS" to="GoalKeyS" method="_on_GoalKey_area_exited"]
+[connection signal="area_entered" from="GoalKeyD" to="GoalKeyD" method="_on_GoalKey_area_entered"]
+[connection signal="area_exited" from="GoalKeyD" to="GoalKeyD" method="_on_GoalKey_area_exited"]

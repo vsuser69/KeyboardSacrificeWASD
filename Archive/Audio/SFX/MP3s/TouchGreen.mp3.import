@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TouchGreen.mp3-7a50453b98d91ffbef2d3dbac740a8d3.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/TouchGreen.mp3"
+dest_files=[ "res://.import/TouchGreen.mp3-7a50453b98d91ffbef2d3dbac740a8d3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

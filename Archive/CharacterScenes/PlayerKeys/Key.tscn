@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Inkscape/Sprites/KeyBlank.png" type="Texture" id=1]
+[ext_resource path="res://CharacterScenes/PlayerKeys/Key.gd" type="Script" id=2]
+[ext_resource path="res://Themes/DefaultKeyTheme.tres" type="Theme" id=3]
+[ext_resource path="res://ResourceScenes/CPUParticles2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Inkscape/Sprites/KeyBlankSmall.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12, 12 )
+
+[node name="Key" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="KeyCollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="KeyTextureProgress" type="TextureProgress" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 16.0
+margin_bottom = 16.0
+max_value = 360.0
+texture_under = ExtResource( 1 )
+texture_over = ExtResource( 5 )
+texture_progress = ExtResource( 1 )
+fill_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeyLabel" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -45.0
+margin_top = -40.0
+margin_right = 48.0
+margin_bottom = 48.0
+theme = ExtResource( 3 )
+text = "-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeyTween" type="Tween" parent="."]
+
+[node name="KeyUpRayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, -32 )
+collide_with_areas = true
+
+[node name="KeyLeftRayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( -32, 0 )
+collide_with_areas = true
+
+[node name="KeyDownRayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 32 )
+collide_with_areas = true
+
+[node name="KeyRightUpRayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 32, 0 )
+collide_with_areas = true
+
+[node name="KeyCPUParticles2D" parent="." instance=ExtResource( 4 )]
+emission_shape = 2
+emission_rect_extents = Vector2( 16, 16 )
+[connection signal="body_entered" from="." to="." method="_on_Key_body_entered"]
+[connection signal="tween_completed" from="KeyTween" to="." method="_on_KeyTween_tween_completed"]

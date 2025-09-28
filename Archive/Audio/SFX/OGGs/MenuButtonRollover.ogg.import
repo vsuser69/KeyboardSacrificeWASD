@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MenuButtonRollover.ogg-bb8aef0740adc0fcc1a29531ba744bcf.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/MenuButtonRollover.ogg"
+dest_files=[ "res://.import/MenuButtonRollover.ogg-bb8aef0740adc0fcc1a29531ba744bcf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

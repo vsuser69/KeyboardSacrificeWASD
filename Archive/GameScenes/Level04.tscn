@@ -1,0 +1,107 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Tilesets/LevelTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/RedTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://Tilesets/InstructionsTileset.tres" type="TileSet" id=3]
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKey.tscn" type="PackedScene" id=4]
+[ext_resource path="res://CharacterScenes/PlayerKeys/Key.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ResourceScenes/PlayerKeysMoveTargetTween.tscn" type="PackedScene" id=6]
+[ext_resource path="res://CharacterScenes/PlayerKeys/Keys.gd" type="Script" id=7]
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKeys.gd" type="Script" id=8]
+[ext_resource path="res://CharacterScenes/PlayerKeys/PlayerKeys.gd" type="Script" id=9]
+[ext_resource path="res://CharacterScenes/PlayerKeys/FreeKeys.gd" type="Script" id=10]
+[ext_resource path="res://CharacterScenes/ActionKeyTargets/ActionKeyTargets.gd" type="Script" id=11]
+
+[node name="Level" type="Node2D"]
+pause_mode = 1
+
+[node name="Keys" type="Node2D" parent="."]
+script = ExtResource( 7 )
+mod_color_player = Color( 0.0235294, 0.839216, 0.627451, 1 )
+mod_color_free = Color( 0.0666667, 0.541176, 0.698039, 1 )
+mod_color_goal = Color( 0.0235294, 0.839216, 0.627451, 0.247059 )
+mod_color_goal_outline = Color( 1, 0.819608, 0.4, 1 )
+
+[node name="PlayerKeys" type="Node2D" parent="Keys"]
+z_index = 5
+z_as_relative = false
+script = ExtResource( 9 )
+key_overrides = [ true, false, true, true, true, true, true, true ]
+
+[node name="KeyW" parent="Keys/PlayerKeys" instance=ExtResource( 5 )]
+position = Vector2( 528, 208 )
+key_string = "W"
+
+[node name="KeyS" parent="Keys/PlayerKeys" instance=ExtResource( 5 )]
+position = Vector2( 528, 240 )
+key_string = "S"
+
+[node name="KeyD" parent="Keys/PlayerKeys" instance=ExtResource( 5 )]
+position = Vector2( 560, 240 )
+key_string = "D"
+
+[node name="FreeKeys" type="Node2D" parent="Keys"]
+script = ExtResource( 10 )
+
+[node name="KeyA" parent="Keys/FreeKeys" instance=ExtResource( 5 )]
+position = Vector2( 496, 304 )
+key_string = "A"
+can_drop_key = true
+
+[node name="PlayerKeysMoveTarget" type="Node2D" parent="Keys"]
+
+[node name="PlayerKeysMoveTargetTween" parent="Keys/PlayerKeysMoveTarget" instance=ExtResource( 6 )]
+
+[node name="AKTCanvasLayer" type="CanvasLayer" parent="Keys"]
+
+[node name="ActionKeyTargets" type="Node2D" parent="Keys/AKTCanvasLayer"]
+script = ExtResource( 11 )
+
+[node name="GoalKeyCanvasLayer" type="CanvasLayer" parent="Keys"]
+layer = -1
+
+[node name="GoalKeys" type="Node2D" parent="Keys/GoalKeyCanvasLayer"]
+script = ExtResource( 8 )
+
+[node name="GoalKeyW" parent="Keys/GoalKeyCanvasLayer/GoalKeys" instance=ExtResource( 4 )]
+position = Vector2( 528, 400 )
+key_string = "W"
+
+[node name="GoalKeyA" parent="Keys/GoalKeyCanvasLayer/GoalKeys" instance=ExtResource( 4 )]
+position = Vector2( 496, 432 )
+key_string = "A"
+
+[node name="GoalKeyS" parent="Keys/GoalKeyCanvasLayer/GoalKeys" instance=ExtResource( 4 )]
+position = Vector2( 528, 432 )
+key_string = "S"
+
+[node name="GoalKeyD" parent="Keys/GoalKeyCanvasLayer/GoalKeys" instance=ExtResource( 4 )]
+position = Vector2( 560, 432 )
+key_string = "D"
+
+[node name="Tilemaps" type="Node2D" parent="."]
+
+[node name="LevelTileMap" type="TileMap" parent="Tilemaps" groups=[
+"Obstacles",
+]]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 0, 0, 65552, 0, 0, 65553, 0, 0, 65554, 0, 0, 65555, 0, 0, 65556, 0, 0, 65557, 0, 0, 65558, 0, 0, 65559, 0, 0, 65560, 0, 0, 65561, 0, 0, 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 131073, 0, 0, 131102, 0, 0, 196609, 0, 0, 196623, 5, 0, 196624, 5, 0, 196625, 5, 0, 196626, 5, 0, 196627, 5, 0, 196638, 0, 0, 262145, 0, 0, 262174, 0, 0, 327681, 0, 0, 327710, 0, 0, 393217, 0, 0, 393246, 0, 0, 458753, 0, 0, 458782, 0, 0, 524289, 0, 0, 524318, 0, 0, 589825, 0, 0, 589854, 0, 0, 655361, 0, 0, 655390, 0, 0, 720897, 0, 0, 720926, 0, 0, 786433, 0, 0, 786462, 0, 0, 851969, 0, 0, 851998, 0, 0, 917505, 0, 0, 917534, 0, 0, 983041, 0, 0, 983070, 0, 0, 1048577, 0, 0, 1048606, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114116, 0, 0, 1114117, 0, 0, 1114118, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114140, 0, 0, 1114141, 0, 0, 1114142, 0, 0 )
+
+[node name="RedTileMap" type="TileMap" parent="Tilemaps" groups=[
+"Red",
+]]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 196623, 5, 0, 196624, 5, 0, 196625, 5, 0, 196626, 5, 0, 196627, 5, 0 )
+
+[node name="InstructionsTileMap" type="TileMap" parent="Tilemaps" groups=[
+"Red",
+]]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+compatibility_mode = true
+format = 1
+tile_data = PoolIntArray( 196616, 4, 0, 983046, 5, 0 )

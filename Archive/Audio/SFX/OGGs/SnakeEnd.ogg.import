@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SnakeEnd.ogg-ce036c5342f9f620c12a715cc6218a0b.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/SnakeEnd.ogg"
+dest_files=[ "res://.import/SnakeEnd.ogg-ce036c5342f9f620c12a715cc6218a0b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

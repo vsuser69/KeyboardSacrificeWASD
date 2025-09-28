@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SnakeTurn.ogg-be98b2d2a3ffc5838cc2290efe41cffb.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/SnakeTurn.ogg"
+dest_files=[ "res://.import/SnakeTurn.ogg-be98b2d2a3ffc5838cc2290efe41cffb.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakeHighlightTick.mp3-e645b64a9de1b63aa94644065fbf0241.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakeHighlightTick.mp3"
+dest_files=[ "res://.import/SnakeHighlightTick.mp3-e645b64a9de1b63aa94644065fbf0241.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

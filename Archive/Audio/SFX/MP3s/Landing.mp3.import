@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Landing.mp3-d7a0e51f134b702f2e931faaa000fa74.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/Landing.mp3"
+dest_files=[ "res://.import/Landing.mp3-d7a0e51f134b702f2e931faaa000fa74.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

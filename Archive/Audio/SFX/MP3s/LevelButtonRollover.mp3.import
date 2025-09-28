@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LevelButtonRollover.mp3-ee887c511b471f88e235ef6f57c23932.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/LevelButtonRollover.mp3"
+dest_files=[ "res://.import/LevelButtonRollover.mp3-ee887c511b471f88e235ef6f57c23932.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

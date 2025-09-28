@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LevelButtonRollover.ogg-1b6a4b48a302f1293b7377413bf27573.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/LevelButtonRollover.ogg"
+dest_files=[ "res://.import/LevelButtonRollover.ogg-1b6a4b48a302f1293b7377413bf27573.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

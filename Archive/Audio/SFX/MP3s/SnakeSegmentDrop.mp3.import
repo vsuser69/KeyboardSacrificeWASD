@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnakeSegmentDrop.mp3-ca30087ae58ec88423beb28720e2d2ab.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/SnakeSegmentDrop.mp3"
+dest_files=[ "res://.import/SnakeSegmentDrop.mp3-ca30087ae58ec88423beb28720e2d2ab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

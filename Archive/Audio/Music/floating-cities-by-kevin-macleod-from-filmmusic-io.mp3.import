@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/floating-cities-by-kevin-macleod-from-filmmusic-io.mp3-26f4bd94fa9910483db651fca2522772.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/floating-cities-by-kevin-macleod-from-filmmusic-io.mp3"
+dest_files=[ "res://.import/floating-cities-by-kevin-macleod-from-filmmusic-io.mp3-26f4bd94fa9910483db651fca2522772.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

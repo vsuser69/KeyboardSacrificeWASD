@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SnakeSegmentDrop.ogg-90ac6ec7a659872871e6a2c10f59e2e6.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/SnakeSegmentDrop.ogg"
+dest_files=[ "res://.import/SnakeSegmentDrop.ogg-90ac6ec7a659872871e6a2c10f59e2e6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

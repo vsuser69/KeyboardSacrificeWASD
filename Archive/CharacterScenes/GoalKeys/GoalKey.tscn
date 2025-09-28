@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Themes/DefaultKeyTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Inkscape/Sprites/KeyBlank.png" type="Texture" id=2]
+[ext_resource path="res://CharacterScenes/GoalKeys/GoalKey.gd" type="Script" id=3]
+[ext_resource path="res://Audio/SFX/OGGs/SnakePickup.ogg" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12, 12 )
+
+[node name="GoalKey" type="Area2D"]
+z_index = 2
+collision_layer = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GoalKeyCollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="GoalKeySprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="OutlineSprite" type="Sprite" parent="."]
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 2 )
+
+[node name="GoalKeyLabel" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -29.0
+margin_top = -24.0
+margin_right = 32.0
+margin_bottom = 32.0
+theme = ExtResource( 1 )
+text = "-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="area_entered" from="." to="." method="_on_GoalKey_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_GoalKey_area_exited"]

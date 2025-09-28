@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wide-putin-(song-for-denise)-made-with-Voicemod.mp3-a849a2d3375af53f62b682e9832b2260.mp3str"
+
+[deps]
+
+source_file="res://wide-putin-(song-for-denise)-made-with-Voicemod.mp3"
+dest_files=[ "res://.import/wide-putin-(song-for-denise)-made-with-Voicemod.mp3-a849a2d3375af53f62b682e9832b2260.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

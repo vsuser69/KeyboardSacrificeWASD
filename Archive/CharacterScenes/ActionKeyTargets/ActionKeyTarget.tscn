@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Themes/DefaultKeyTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Inkscape/Sprites/KeyBlank.png" type="Texture" id=2]
+[ext_resource path="res://CharacterScenes/ActionKeyTargets/ActionKeyTarget.gd" type="Script" id=3]
+[ext_resource path="res://Inkscape/Sprites/KeySpace.png" type="Texture" id=4]
+
+[node name="ActionKeyTarget" type="Node2D"]
+position = Vector2( 528, 80 )
+z_index = 2
+script = ExtResource( 3 )
+
+[node name="ActionKeyTargetSprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+
+[node name="ActionKeyTargetSpaceSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 64, 0 )
+texture = ExtResource( 4 )
+
+[node name="ActionKeyTargetLabel" type="Label" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -29.0
+margin_top = -24.0
+margin_right = 32.0
+margin_bottom = 32.0
+theme = ExtResource( 1 )
+text = "-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ActionKeyTargetSpaceLabel" type="Label" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = -16.0
+margin_right = 160.0
+margin_bottom = 24.0
+theme = ExtResource( 1 )
+text = "Enter"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ActionKeyTargetTween" type="Tween" parent="."]

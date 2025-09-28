@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LevelButtonSelect.mp3-d8617eb02dac4fe1e0913863d4ef4fe3.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/MP3s/LevelButtonSelect.mp3"
+dest_files=[ "res://.import/LevelButtonSelect.mp3-d8617eb02dac4fe1e0913863d4ef4fe3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

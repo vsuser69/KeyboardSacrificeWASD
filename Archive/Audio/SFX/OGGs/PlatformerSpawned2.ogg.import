@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PlatformerSpawned2.ogg-72aaecc9b8df47fb3486166814e9b0a5.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/PlatformerSpawned2.ogg"
+dest_files=[ "res://.import/PlatformerSpawned2.ogg-72aaecc9b8df47fb3486166814e9b0a5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

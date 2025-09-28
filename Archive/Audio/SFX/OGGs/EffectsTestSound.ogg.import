@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/EffectsTestSound.ogg-010286dea43a5e369a2fdf7e06e82e13.oggstr"
+
+[deps]
+
+source_file="res://Audio/SFX/OGGs/EffectsTestSound.ogg"
+dest_files=[ "res://.import/EffectsTestSound.ogg-010286dea43a5e369a2fdf7e06e82e13.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
